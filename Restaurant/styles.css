@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --fontOne: 'Poppins', sans-serif;
+  --textColor: white;
+  --secondaryColor: #007610e8;
+  --tertiaryColor: #078C4F;
+  --quanternaryColor: rgb(185, 185, 185);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+/* Universals */
+
+.section-header {
+  color: white;
+  font-family: var(--fontOne);
+  margin-left: 1rem;
+}
+
+/* Hero */
+.hero-container {
+  height: 100vh;
+  background-image: url(images/heroimage.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  flex-direction: column;
+}
+
+.pos-container {
+  position: relative;
+}
+
+.sched {
+  background-color: var(--quanternaryColor);
+  font-family: var(--fontOne);
+  position: relative;
+  top: -30px;
+  border-radius: 1rem;
+  padding: .75rem 1rem;
+  border: 2px solid white;
+  z-index: 1;
+}
+
+/* Heading */
+header {
+  display: flex;
+  /* position: fixed; */
+  width: 100%;
+  justify-content: space-between;
+  background-color: var(--secondaryColor);
+  z-index: 100;
+  padding: 1em 0 .5em 0;
+  box-shadow: 0 0 20px 0 #000;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  align-items: center;
+  width: 73%;
+}
+
+header li {
+  margin-right: .5rem;
+  font-family: var(--fontOne);
+  font-weight: 150;
+}
+
+a {
+  color: var(--textColor);
+  text-decoration: none;
+  cursor: pointer;
+  transition: font-size 70ms;
+}
+
+.headhov:hover {
+  font-size: 1.2em;
+}
+
+.logo {
+  width: 17%;
+}
+
+.logo-heading {
+  color: var(--textColor);
+  font-family: 'Great Vibes';
+  font-weight: 150;
+  margin-left: .7rem;
+}
+
+.heading-container {
+  font-family: var(--fontOne);
+  font-weight: 100;
+  color: var(--textColor);
+  background-color: rgba(15, 15, 15, 0.568);
+  padding: 5rem 5rem;
+  border-radius: 4rem;
+}
+
+.logo-heading2 {
+  color: var(--textColor);
+  font-family: 'Great Vibes';
+  font-weight: 177;
+  font-size: 5em;
+}
+
+.header-btn {
+  width: 10%;
+  background-color: var(--tertiaryColor);
+  color: var(--textColor);
+  margin-right: 1em;
+  font-family: var(--fontOne);
+  font-weight: 120;
+  border-radius: 1em;
+  border: 1px white solid;
+  transition: background-color 30ms;
+  transition: font-size 70ms;
+  cursor: pointer;
+}
+
+.header-btn:hover {
+  background-color: rgb(5, 46, 5);
+  font-size: .9rem;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: var(--tertiaryColor);
+  color: var(--textColor);
+  font-family: var(--fontOne);
+  border-radius: 1em;
+  border: 1px white solid;
+  margin-top: .75rem;
+  padding: .5rem 1rem;
+  transition: color 40ms, border-color 40ms, background-color 40ms;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(5, 46, 5);
+  color: var(--quanternaryColor);
+  border-color: var(--quanternaryColor);
+}
+
+/* About Us */
+
+.blurb {
+  height: 55vh;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 3rem;
+}
+
+.s1content {
+  color: var(--textColor);
+  font-family: var(--fontOne);
+  margin: 0 2.5rem 2.5rem 2.5rem;
+
+}
+
+.about-us {
+  background-image: linear-gradient(to bottom left, rgb(14, 66, 18) 20%, var(--secondaryColor) 20%)
+}
+
+.s1img {
+  width: auto;
+  height: 300px;
+  margin: 1.5rem;
+  border-radius: 10px;
+}
+
+
+
+.f__flex {
+  display: flex;
+  height: 55vh;
+}
+
+.f__info{
+  width: 50%;
+  background-color: var(--quanternaryColor);
+  padding: 1rem 0;
+}
+
+.f__info--company {
+  font-family: 'Great Vibes', cursive;
+  padding: 1.5rem;
+} 
+.f__info--company h1 {
+  font-size: 3rem;
+  line-height: 2.5rem;
+}
+.f__companyinfo ul{
+  font-family: var(--fontOne);
+  font-size: .75rem;
+  list-style: none;
+  line-height: 1.4rem;
+}
+.dinerspan {
+  font-size: 2rem;
+  margin-top: none;
+}
+
+
+/* Slider */
+.slider__section  {
+  background-image: linear-gradient(to top left,rgb(15, 15, 15) 80%,  black 80%);
+  height: 75vh;
+}
+
+.slider {
+  width: 60vw; /*margin of 20 on right and left */
+  height: 60vh;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  
+}
+
+.slide {
+  width: 100%;
+  height: 60vh;
+  background-image: url(images/pic1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  transition: transform 1s ease;
+}
+
+.btn-s {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  background-color: rgba(54, 54, 54, 0.466);
+  color: var(--textColor);
+  font-family: var(--fontOne);
+  border-radius: 1em;
+  border: 1px white solid;
+  margin-top: .75rem;
+  padding: .5rem 1rem;
+  transition: color 40ms, border-color 40ms, background-color 40ms;
+  cursor: pointer;
+}
+
+.btn--left {
+  left: 5%
+}
+.btn--right {
+  right: 5%;
+}
+
+#map {
+  height: 150px;
+  margin: 2rem 4rem;
+  border-radius: 4px;
+ 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-family: var(--fontOne);
+  height: 50vh; 
+  background-color: rgba(15, 15, 15, 0.568);
+  border-radius: 10px;
+  margin-right: 1rem;
+}
+
+.form--colone,
+.form--coltwo,
+.form--colthree,
+.form--colfour {
+  width: 40vw;
+}
+
+input {
+  border: none;
+  border-radius: 3px;
+  height: 2rem;
+}
+
+.input--full {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+}
+
+.input--left,
+.input--right {
+  width: 49%;
+}
+form button {
+  float: right;
+  height: 2rem;
+  padding: 0 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
